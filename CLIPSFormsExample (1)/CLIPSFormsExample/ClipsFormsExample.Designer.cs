@@ -33,7 +33,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.codeBox = new System.Windows.Forms.TextBox();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.outputBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -77,7 +76,6 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.checkedListBox2);
             this.splitContainer1.Panel2.Controls.Add(this.outputBox);
             this.splitContainer1.Size = new System.Drawing.Size(1067, 648);
             this.splitContainer1.SplitterDistance = 501;
@@ -118,7 +116,6 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(180, 648);
             this.checkedListBox1.TabIndex = 3;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // codeBox
             // 
@@ -131,51 +128,15 @@
             this.codeBox.Size = new System.Drawing.Size(315, 648);
             this.codeBox.TabIndex = 2;
             // 
-            // checkedListBox2
-            // 
-            this.checkedListBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Items.AddRange(new object[] {
-            "pudge",
-            "lion",
-            "doom",
-            "windranger",
-            "orge-magi",
-            "lone-druid",
-            "faceless-void",
-            "invoker",
-            "legion-commander",
-            "monkey-king",
-            "beastmaster",
-            "sven",
-            "vengerful-spirit",
-            "dark-willow",
-            "broodmother",
-            "visage",
-            "outworld-devourer",
-            "treant-protector",
-            "meduse",
-            "mirana",
-            "shadow-fiend",
-            "arc-warden",
-            "earthshaker",
-            "axe",
-            "enchantress",
-            "wraith-king"});
-            this.checkedListBox2.Location = new System.Drawing.Point(0, 0);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(173, 648);
-            this.checkedListBox2.TabIndex = 4;
-            // 
             // outputBox
             // 
-            this.outputBox.Dock = System.Windows.Forms.DockStyle.Right;
+            this.outputBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.outputBox.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.outputBox.Location = new System.Drawing.Point(179, 0);
+            this.outputBox.Location = new System.Drawing.Point(0, 0);
             this.outputBox.Multiline = true;
             this.outputBox.Name = "outputBox";
             this.outputBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.outputBox.Size = new System.Drawing.Size(383, 648);
+            this.outputBox.Size = new System.Drawing.Size(562, 648);
             this.outputBox.TabIndex = 1;
             // 
             // panel2
@@ -303,7 +264,6 @@
     private System.Windows.Forms.SaveFileDialog clipsSaveFileDialog;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
     }
 }
 
